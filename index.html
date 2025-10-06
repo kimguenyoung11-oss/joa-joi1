@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Joa & Joi — Borse eleganti</title>
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="preload" as="image" href="assets/images/jj-aurora.jpg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="nav">
+    <div class="brand">
+      <img src="assets/logo.svg" alt="Joa & Joi logo">
+      <strong>Joa & Joi</strong>
+    </div>
+    <div class="menu">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="#contatti">Contatti</a>
+    </div>
+  </nav>
+
+  <header class="container hero">
+    <div class="hero-card">
+      <h1>Borse essenziali,<br/>eleganza quotidiana.</h1>
+      <p>Linee pulite, materiali selezionati e colori senza tempo. Benvenuta in <strong>Joa & Joi</strong>.</p>
+      <a class="btn" href="shop.html">Entra nello shop</a>
+      <div class="hero-sub">
+        <div class="kv"><span class="badge">Spedizione 48h</span></div>
+        <div class="kv"><span class="badge">Reso 14 giorni</span></div>
+        <div class="kv"><span class="badge">Pagamento sicuro</span></div>
+      </div>
+    </div>
+    <img src="assets/images/jj-aurora.jpg" alt="Aurora Tote">
+  </header>
+
+  <main class="container">
+    <div class="section-title">
+      <h2>Più amate</h2>
+      <a class="btn btn-outline" href="shop.html">Vedi tutto</a>
+    </div>
+    <div class="grid" id="featured"></div>
+
+    <section id="about" class="container" style="margin-top:32px">
+      <div class="section-title"><h2>Chi siamo</h2></div>
+      <p class="small">Joa & Joi nasce dall’idea di creare borse versatili e femminili, capaci di accompagnare ogni momento della giornata. L’ispirazione viene dalle tonalità delicate della natura e dall’artigianalità italiana.</p>
+    </section>
+
+    <section id="contatti" class="container" style="margin-top:32px">
+      <div class="section-title"><h2>Contatti</h2></div>
+      <p class="small">WhatsApp: <a href="https://wa.me/390000000000">+39 000 000 0000</a> — Email: <a href="mailto:info@joaandjoi.it">info@joaandjoi.it</a></p>
+    </section>
+  </main>
+
+  <footer class="footer container">
+    <div>© <span id="year"></span> Joa & Joi. Tutti i diritti riservati.</div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    renderGrid('featured', PRODUCTS.slice(0,3));
+  </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shop — Joa & Joi</title>
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="nav">
+    <div class="brand">
+      <img src="assets/logo.svg" alt="Joa & Joi logo">
+      <strong>Joa & Joi</strong>
+    </div>
+    <div class="menu">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="index.html#contatti">Contatti</a>
+    </div>
+  </nav>
+
+  <main class="container">
+    <div class="section-title">
+      <h1>Shop</h1>
+      <span class="small">8 modelli</span>
+    </div>
+    <div class="grid" id="grid"></div>
+  </main>
+
+  <footer class="footer container">
+    <div>© <span id="year"></span> Joa & Joi.</div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    renderGrid('grid', PRODUCTS);
+  </script>
+</body>
+</html>
