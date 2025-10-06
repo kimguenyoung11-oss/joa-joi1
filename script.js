@@ -16,7 +16,7 @@ function cardTemplate(p){
     </div>
     <div class="actions" style="margin-top:8px">
       <a class="btn" href="product.html?id=${p.id}">Dettagli</a>
-      <a class="btn btn-outline" href="https://wa.me/390000000000?text=Ciao%20Joa%20%26%20Joi%2C%20vorrei%20ordinare%20la%20borsa%20${encodeURIComponent(p.name)}">Ordina su WhatsApp</a>
+      <a class="btn btn-outline" href="https://wa.me/393923599390text=Ciao%20Joa%20%26%20Joi%2C%20vorrei%20ordinare%20la%20borsa%20${encodeURIComponent(p.name)}">Ordina su WhatsApp</a>
     </div>
   </div>`;
 }
@@ -43,7 +43,7 @@ function renderProduct(){
       <h3 style="margin-top:6px">${formatPrice(p.price)}</h3>
       <p style="margin-top:10px">${p.desc}</p>
       <div class="actions">
-        <a class="btn" href="https://wa.me/390000000000?text=Ciao%20Joa%20%26%20Joi%2C%20vorrei%20ordinare%20la%20borsa%20${encodeURIComponent(p.name)}">Ordina su WhatsApp</a>
+        <a class="btn" href="https://wa.me/393923599390text=Ciao%20Joa%20%26%20Joi%2C%20vorrei%20ordinare%20la%20borsa%20${encodeURIComponent(p.name)}">Ordina su WhatsApp</a>
         <a class="btn btn-outline" href="shop.html">Torna allo shop</a>
       </div>
       <div class="small" style="margin-top:18px">* Pagamenti online disponibili nella versione WordPress con WooCommerce.</div>
